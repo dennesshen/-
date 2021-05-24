@@ -187,7 +187,7 @@ public class Frame extends javax.swing.JFrame {
 //                return;
 //            }
 //       }
-// sdf
+// sdfefg
     }//GEN-LAST:event_StartActionPerformed
 
     private void ResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ResetActionPerformed
