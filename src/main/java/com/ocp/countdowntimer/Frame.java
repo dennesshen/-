@@ -15,7 +15,6 @@ public class Frame extends javax.swing.JFrame {
     private CountDownThread Cdt;
     private CaculatorGoal caculatorGoal = new CaculatorGoal();
     private Util util = new Util();
-    private long endtime;
     private long startTime;
     private String resultShow;
 
@@ -176,7 +175,7 @@ public class Frame extends javax.swing.JFrame {
             CountDownThread Cdt = new CountDownThread(startTimeInBlock, util, caculatorGoal, resultArea, service);
             int initDelay = 0;
             int delay = 1;
-            service.scheduleAtFixedRate(Cdt, endtime, endtime, TimeUnit.DAYS);
+            service.scheduleAtFixedRate(Cdt, initDelay, delay, TimeUnit.DAYS);
         }
 
 //為什麼不能這樣處理

@@ -68,7 +68,7 @@ class CountDownThread implements Runnable {
             show = String.format("剩餘時間  00 ： 00\n倒數計時結束，請按Reset!");
             checkNumber = 0;
             service.shutdown();
-            System.out.println(service.isShutdown());
+            //System.out.println(service.isShutdown());
         }
         jTextArea.setText(show);
 
