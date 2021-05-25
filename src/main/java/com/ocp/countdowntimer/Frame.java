@@ -175,7 +175,7 @@ public class Frame extends javax.swing.JFrame {
             CountDownThread Cdt = new CountDownThread(startTimeInBlock, util, caculatorGoal, resultArea, service);
             int initDelay = 0;
             int delay = 1;
-            service.scheduleAtFixedRate(Cdt, initDelay, delay, TimeUnit.DAYS);
+            service.scheduleAtFixedRate(Cdt, initDelay, delay, TimeUnit.SECONDS);
         }
 
 //為什麼不能這樣處理
